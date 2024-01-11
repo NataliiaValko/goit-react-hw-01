@@ -9,8 +9,6 @@ import transactions from '../transactions.json';
 import './App.css';
 
 function App() {
-  throw new Error('123');
-
   return (
     <>
       <Profile
