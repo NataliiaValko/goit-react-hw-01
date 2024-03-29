@@ -1,6 +1,7 @@
 import Profile from './Profile/Profile';
 import FriendList from './FriendList/FriendList';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
+import Container from './Container/Container';
 
 import userData from '../components/Profile/userData.json';
 import friends from '../friends.json';
@@ -10,7 +11,7 @@ import './App.css';
 
 function App() {
   return (
-    <>
+    <Container>
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -20,7 +21,7 @@ function App() {
       />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-    </>
+    </Container>
   );
 }
 
